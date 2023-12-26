@@ -7,7 +7,7 @@
             Stack<int> stack = new();
             int menu = 0;
 
-            while(menu != 1)
+            while (menu != 1)
             {
                 Console.WriteLine("MENU");
                 Console.WriteLine("1 - Sair do Projeto");
@@ -69,11 +69,12 @@
 
             void StackDown()
             {
-                if(stack.Count > 0)
+                if (stack.Count > 0)
                 {
                     int temp = stack.Pop();
                     Console.WriteLine(temp);
-                } else
+                }
+                else
                 {
                     Console.WriteLine("A pilha está vazia.");
                 }
@@ -85,9 +86,9 @@
                 Console.WriteLine(temp);
             }
 
-            void showTopStack() 
+            void showTopStack()
             {
-                if(stack.Count != 0)
+                if (stack.Count != 0)
                 {
                     Console.WriteLine(stack.Peek());
                 }
