@@ -1,13 +1,13 @@
 ﻿namespace stack
 {
-    public class implementationStack <T>: IImplementationStack<T>
+    public class ImplementationStack <T>: IImplementationStack<T>
     {
         private int top = 0;
         private int size;
 
         private T[] stack;
 
-        public implementationStack(int size = 10)
+        public ImplementationStack(int size = 10)
         {
             this.size = size;
             stack = new T[size];
